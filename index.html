@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Startup Roadmap</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <h1>🚀 Startup Roadmap Dashboard</h1>
+
+    <div class="controls">
+        <select id="teamModeSelect" onchange="setTeam()">
+            <option value="duo">Duo Team</option>
+            <option value="trio">Trio Team</option>
+        </select>
+
+        <input id="searchBox" placeholder="Search tasks..." onkeyup="searchTasks()">
+
+        <button onclick="showTimeline()">📆 Timeline</button>
+    </div>
+
+    <div id="phases"></div>
+
+    <div id="timeline"></div>
+
+    <div id="panel" class="panel">
+        <h2 id="panelTitle"></h2>
+        <div id="roleTasks"></div>
+        <button onclick="panel.classList.remove('show')">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

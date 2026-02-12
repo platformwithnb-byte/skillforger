@@ -1,0 +1,93 @@
+body {
+    font-family: Arial;
+    background: #020617;
+    color: white;
+    padding: 20px;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input,
+select,
+button {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    background: #38bdf8;
+    cursor: pointer;
+}
+
+.phase {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.bar {
+    background: #0f172a;
+    height: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.fill {
+    background: #22c55e;
+    height: 100%;
+}
+
+.panel {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 350px;
+    height: 100%;
+    background: #020617;
+    padding: 20px;
+    overflow: auto;
+    transition: .3s;
+}
+
+.panel.show {
+    right: 0;
+}
+
+.role {
+    margin-bottom: 15px;
+}
+
+.task {
+    display: block;
+    margin: 4px 0;
+}
+
+.note {
+    width: 100%;
+    background: #020617;
+    border: 1px solid #334155;
+    color: white;
+    padding: 6px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+#timeline {
+    display: none;
+    padding: 15px;
+}
+
+.month {
+    background: #1e293b;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 6px 0;
+}
